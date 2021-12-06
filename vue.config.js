@@ -1,5 +1,9 @@
 module.exports = {
   pwa: {
+    workboxPluginMode: 'InjectManifest',
+    workboxOptions: {
+      swSrc: 'public/firebase-messaging-sw.js',
+    },
     iconPaths: {
       favicon32: './img/icons/32x32.png',
       favicon16: null,
@@ -9,13 +13,13 @@ module.exports = {
     },
     manifestPath: 'manifest.json',
 
-    msTileColor: '#4DBA87',
+    msTileColor: '#f68b1e',
     manifestOptions: {
-      name: 'Vue Test',
-      short_name: 'Vue',
+      name: 'Teplocom Cloud',
+      short_name: 'Teplocom',
       start_url: '/',
       display: 'standalone',
-      theme_color: '#123456',
+      theme_color: '#f68b1e',
       icons: [
         {
           src: './img/icons/32x32.png',
@@ -61,11 +65,11 @@ module.exports = {
         },
       ],
     },
-    name: 'Vue Test',
-    themeColor: '#4DBA87',
+    name: 'Teplocom Cloud',
+    themeColor: '#f68b1e',
     appleMobileWebAppCapable: 'no',
     appleMobileWebAppStatusBarStyle: 'black-translucent',
-    assetsVersion: '1.0.0',
+    assetsVersion: '1.0.1',
     start_url: '/',
     prefer_related_applications: true,
   },
