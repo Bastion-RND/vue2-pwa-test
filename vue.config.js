@@ -17,9 +17,12 @@ module.exports = {
     manifestOptions: {
       name: 'Teplocom Cloud',
       short_name: 'Teplocom',
+      description: 'Теплоинформатор Teplocom Cloud',
       start_url: '/',
+      orientation: 'any',
       display: 'standalone',
       theme_color: '#f68b1e',
+      background_color: '#ffffff',
       icons: [
         {
           src: './img/icons/32x32.png',
