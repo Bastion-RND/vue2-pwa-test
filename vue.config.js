@@ -1,9 +1,5 @@
 module.exports = {
   pwa: {
-    workboxPluginMode: 'InjectManifest',
-    workboxOptions: {
-      swSrc: 'public/firebase-messaging-sw.js',
-    },
     iconPaths: {
       favicon32: './img/icons/32x32.png',
       favicon16: null,
