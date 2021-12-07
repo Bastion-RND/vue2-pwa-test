@@ -23,7 +23,7 @@ firebase.initializeApp(firebaseConfig);
 
 // eslint-disable-next-line no-undef
 const messaging = firebase.messaging();
-
+console.log('test firebase with InjectManifest --->');
 messaging.onBackgroundMessage((payload) => {
   console.log('[firebase-messaging-sw.js] Received background message', payload);
 });
