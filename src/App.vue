@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    Тест
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+const INDEXED_DB = {
+  name: 'teplocom',
+  storeName: 'push',
+  description: 'Хранилище PUSH настроек',
+};
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld,
+  async mounted() {
+    const store = await this.$vlf.createInstance(INDEXED_DB);
+
+    const userPhone = store.getItem('userPhone');
+
+    if (!userPhone) store.setItem('userPhone', '+7987654321');
   },
 };
 </script>

@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "localforage": "^1.10.0",
     "register-service-worker": "^1.7.1",
+    "vlf": "^1.1.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
