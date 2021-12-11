@@ -29,6 +29,7 @@ if (process.env.NODE_ENV === 'production') {
           vapidKey: FIREBASE_CONFIG.vapidKey,
           serviceWorkerRegistration: registration,
         });
+        localStorage.setItem('fcmToken', fcmToken);
         console.log(fcmToken);
       } catch (e) {
         console.log(e);
